@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Image transformations</string>
+    <string name="guide">What are you in the mood for today?</string>
+    <string name="invert">Inverting image</string>
+    <string name="change">Changing RGB channels</string>
+    <string name="rgb">RGB channels separation</string>
+    <string name="merge">Merging two photos</string>
+    <string name="filter">Various filters</string>
+    <string name="watermark">Adding watermark</string>
+    <string name="back">Back to main page</string>
+    <string name="instruction">Formula used: new_pixel_channel_value
+        = old_pixel_channel_value % 25</string>
+    <string name="percent">50</string>
+    <string name="original">Original</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="blur">Blurring</string>
+    <string name="sharp">Sharpening</string>
+    <string name="median">Median filter</string>
+    <string name="dilation">Dilation filter</string>
+    <string name="sobel">Sobel filter</string>
+    <string name="method1">Using convolution matrix</string>
+    <string name="method2">Using RenderScript</string>
+    <string name="watermark_bitmap">Watermark (black and white)</string>
+    <string name="bitmap1">1st bitmap (original)</string>
+    <string name="bitmap2">1st bitmap (after adding watermark)</string>
+    <string name="watermark_result">Original (after adding watermark)</string>
+</resources>

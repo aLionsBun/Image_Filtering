@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Filter" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:text="@string/filter"/>
+
+            <Button
+                android:id="@+id/blur_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="@string/blur" />
+
+            <Button
+                android:id="@+id/sharp_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="@string/sharp" />
+
+            <Button
+                android:id="@+id/median_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="@string/median" />
+
+            <Button
+                android:id="@+id/dilation_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="@string/dilation" />
+
+            <Button
+                android:id="@+id/sobel_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="@string/sobel" />
+
+            <ImageView
+                android:id="@+id/filter_source"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_marginBottom="10dp"
+                tools:ignore="ContentDescription"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="@string/original"/>
+
+            <ImageView
+                android:id="@+id/filter_result_1"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_marginBottom="10dp"
+                tools:ignore="ContentDescription"/>
+
+            <TextView
+                android:id="@+id/filter_result_1_info"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="@string/method1"/>
+
+            <ImageView
+                android:id="@+id/filter_result_2"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_marginBottom="10dp"
+                tools:ignore="ContentDescription"/>
+
+            <TextView
+                android:id="@+id/filter_result_2_info"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="@string/method2"/>
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:text="@string/back" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
